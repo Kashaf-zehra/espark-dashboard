@@ -1,0 +1,243 @@
+import { a11yProps } from '@/src/utils/tabs';
+
+export const employeeProfileData = {
+  downloadResume: 'Download resume',
+  editCredentials: 'Edit credentials',
+  personalInformation: 'Personal information',
+  emergencyContact: 'Emergency contact',
+  profile: 'Profile',
+  employees: 'Employees',
+  name: 'John Doe',
+  id: 'Employee ID: es-00020',
+  designation: ' Web developer',
+  primary: 'Primary',
+  secondary: 'Secondary',
+  acceptImage: 'image/',
+  invalidFile: 'Invalid file type.Please select an image.',
+  employeeId: 'Employee ID',
+  refreshBtn: 'Refresh',
+  filterBtn: 'Filter',
+  addAsset: 'Add asset',
+  loading: ' Loading...',
+  employeeNotfound: ' Employee not found',
+  noidFound: 'No Employee Found',
+  client: 'Client',
+  attendanceReports: 'Attendance reports',
+  valueOne: 'one',
+  valueTwo: 'two',
+  valuethree: 'three',
+  valueFour: 'four',
+  select: ' Select',
+  save: 'Save',
+  addEmployee: 'Add employee',
+};
+export const EDIT_MODAL = {
+  editProfile: 'Edit profile picture',
+  addassetForm: 'Add asset form',
+  remove: 'Remove',
+  change: 'Change',
+  employeeId: 'Employee ID',
+  newPassword: 'New password',
+  currentPassword: 'Current password',
+  confirmPassword: 'Confirm password',
+  id: 'eS000020',
+  enterPassword: 'Enter current password',
+  enternewPassword: 'Enter new password',
+  save: 'Save',
+  editEmergencyContacts: 'Edit emergency contacts',
+  editEmployeeCredentials: 'Edit employee credentials',
+  name: 'Name',
+  namePlaceholder: 'John Doe',
+  relationship: 'Relationship',
+  father: 'Father',
+  phone: 'Phone',
+  mobileNo: '0330012378',
+  phoneNo: '090078601',
+  primaryContact: 'Primary Contact',
+  secondaryContact: 'Secondary Contact',
+  editPersonalDetails: 'Edit personal informations',
+  employeeName: 'Employee name',
+  birthDate: 'Birth Date',
+  email: 'Email',
+  emailPlaceholder: 'johndoe@1123.com',
+  jobTitle: 'Job title',
+  maritalStatus: 'Marital status',
+  gender: 'Gender',
+  team: 'Team',
+  joiningDate: 'Joining date',
+  gadgetName: 'Gadget name',
+  gadgetPlaceholder: 'Enter gadget name',
+  assetID: 'Asset ID',
+  assetidPlaceholder: 'Enter asset ID',
+  assignedDate: 'Assigned date',
+  assigneeName: 'Assignee name',
+  assignnamePlacholder: 'Enter assignee name',
+  assignedEmail: 'Assigned email',
+  assignedemailPlaceholder: ' Enter assignee email',
+  assigneePicture: 'Assignee picture',
+  uploadPicture: 'Upload picture',
+  submit: 'Submit',
+};
+
+export const employeeDataLabel = [
+  { label: 'Employee name', value: 'John Doe', name: 'employee_name' },
+  { label: 'Employee ID', value: '090078601', name: 'employee_id' },
+  { label: 'Birth date', value: 'January 1, 1990', name: 'dob', type: 'date' },
+  { label: 'Gender', value: 'Male', name: 'gender' },
+  { label: 'Email', value: 'johndoe@123.com', name: 'email' },
+  { label: 'Job title', value: 'Web developer', name: 'job_title' },
+  { label: 'Role', value: 'Senior', name: 'role' },
+  {
+    label: 'Joining date',
+    value: '26/01/23',
+    name: 'joining_date',
+    type: 'date',
+  },
+  { label: 'Marital status', value: 'Married', name: 'marital_status' },
+];
+export const emergencyContact = [
+  { label: 'Name', value: 'John Doe', name: 'name' },
+  { label: 'Relationship', value: 'Father', name: 'relation' },
+  { label: 'Phone', value: '03323883838', name: 'phone_number' },
+];
+export const employeeProfileDetails = [
+  {
+    employeeId: 12222,
+    employeeName: 'Bilal Ahmed Khan',
+    birthDate: 'January 1, 1997',
+    gender: 'Male',
+    team: 'Web development',
+    designation: 'Web developer',
+    joiningDate: '26/01/21',
+    maritalStatus: 'single',
+  },
+  {
+    employeeId: 12223,
+    employeeName: 'Muzamil Ali',
+    birthDate: 'January 1, 1996',
+    gender: 'Male',
+    team: 'Web development',
+    designation: 'Web developer',
+    joiningDate: '25/05/21',
+    maritalStatus: 'single',
+  },
+];
+export const employeesTabs = [
+  {
+    label: 'Public',
+    prop: a11yProps(0),
+  },
+  {
+    label: 'Client',
+    prop: a11yProps(1),
+  },
+  {
+    label: ' Attendance reports',
+    prop: a11yProps(2),
+  },
+  {
+    label: ' Assets',
+    prop: a11yProps(3),
+  },
+];
+
+export const MARITAL_STATUS = [
+  {
+    label: 'Single',
+    value: 'Single',
+  },
+  {
+    label: 'Married',
+    value: 'Married',
+  },
+];
+
+export const ASSET_TABLECOLUMN = [
+  {
+    title: 'Gadget',
+    flex: 2,
+    name: 'gadget',
+  },
+  {
+    title: 'Asset ID',
+    flex: 2,
+    name: 'asset_id',
+  },
+  {
+    title: 'Assigned date',
+    flex: 2,
+    name: 'assigned_date',
+  },
+  {
+    title: 'Assignee',
+    flex: 2,
+    name: 'assignee_name',
+  },
+  {
+    title: 'Action',
+    flex: 2,
+    name: 'action',
+  },
+];
+export const ASSET_TABLEDATA = [
+  {
+    gadget: 'LapTop',
+    assetId: 'AST-001',
+    assignedDate: 'September 7,2023 11:07 AM',
+    assignee: [
+      '/icons/AssigneeAvatar.svg',
+      'Bilal Ahmed Khan',
+      'bilal@espark.com',
+    ],
+    action: ['Delete'],
+    actionStatus: true,
+  },
+  {
+    gadget: 'Del keyboard',
+    assetId: 'AST-001',
+    assignedDate: 'September 7,2023 11:07 AM',
+    assignee: [
+      '/icons/AssigneeAvatar.svg',
+      'Bilal Ahmed Khan',
+      'bilal@espark.com',
+    ],
+    action: ['Delete'],
+    actionStatus: true,
+  },
+  {
+    gadget: 'Laptop',
+    assetId: 'AST-001',
+    assignedDate: 'September 7,2023 11:07 AM',
+    assignee: [
+      '/icons/AssigneeAvatar.svg',
+      'Bilal Ahmed Khan',
+      'bilal@espark.com',
+    ],
+    action: ['Delete'],
+    actionStatus: true,
+  },
+  {
+    gadget: 'Logictech mouse',
+    assetId: 'AST-001',
+    assignedDate: 'September 7,2023 11:07 AM',
+    assignee: [
+      '/icons/AssigneeAvatar.svg',
+      'Bilal Ahmed Khan',
+      'bilal@espark.com',
+    ],
+    action: ['Delete'],
+    actionStatus: true,
+  },
+  {
+    gadget: 'Laptop',
+    assetId: 'AST-001',
+    assignedDate: 'September 7,2023 11:07 AM',
+    assignee: [
+      '/icons/AssigneeAvatar.svg',
+      'Bilal Ahmed Khan',
+      'bilal@espark.com',
+    ],
+    action: ['Delete'],
+    actionStatus: true,
+  },
+];

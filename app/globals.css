@@ -1,0 +1,367 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.root {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.formControl {
+  margin: 8px;
+  min-width: 180px;
+}
+
+.menu {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.search-input:focus,
+.reason-text-area:focus {
+  outline: none;
+}
+.reason-text-area {
+  padding: 5px 10px;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0px 4px;
+  margin-bottom: 20px;
+}
+.table-min-width {
+  min-width: 1024px;
+}
+
+.table th {
+  font-weight: 500 !important;
+}
+
+.table td {
+  font-weight: 400 !important;
+}
+
+.table td,
+.table th {
+  text-align: center;
+  padding: 8px 0;
+  color: #595959;
+  /* flex: 1; */
+  font-size: 12px;
+}
+.app-table-data {
+  text-align: center;
+  padding: 5px 0;
+  color: #595959;
+  /* flex: 1; */
+  font-size: 12px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+}
+.app-table-row {
+  background-color: #f6f6f6;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 40px;
+}
+.app-table-row-empl {
+  background-color: #f6f6f6;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 5px;
+}
+.app-table-row-contract {
+  background-color: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.empty-row {
+  background-color: #fff;
+  height: 20px;
+}
+
+/* Assuming you are using a CSS file */
+.list-item-box {
+  position: relative;
+}
+
+.list-item-box::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.list-item-box.selected-list-item {
+  background: #e6f5f4;
+}
+
+.list-item-box.selected-list-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #068987;
+}
+.list-item-box.last-item::before {
+  border-bottom-left-radius: 90px;
+}
+
+.list-item-box:hover {
+  /* background: #e6f5f4; */
+}
+
+.list-item-box:hover::before {
+  /* background-color: #068987; */
+}
+
+.custom-dropdown-item:hover {
+  cursor: pointer;
+  background-color: #e6f5f4;
+}
+
+.custom-dropdown-item:hover::before {
+  background-color: #068987;
+}
+
+.selected-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+.calendar-icon {
+  @media (min-width: 700px) and (max-width: 1200px) {
+    margin-left: 70px;
+  }
+  @media (min-width: 500px) and (max-width: 700px) {
+    margin-left: 40px;
+  }
+}
+.scrollbar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+}
+
+.scrollbar-container::-webkit-scrollbar {
+  width: 12px;
+}
+.scrollbar-container::-webkit-scrollbar-track {
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  margin-top: -30px;
+  margin-bottom: -10px;
+}
+.scrollbar-container::-webkit-scrollbar-thumb {
+  background: #f6f6f6;
+  border-radius: 10px;
+  background-clip: content-box;
+  border: 1px solid #d9d9d9;
+}
+
+.selected-dropdown::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  height: 31px;
+  background-color: #068987;
+  border: 1px solid #068987;
+}
+
+.divTealLeft::before {
+  border-left: none;
+  border-top-left-radius: 2px;
+}
+
+.divTealRight::before {
+  border-bottom-left-radius: 2px;
+  color: gray;
+}
+
+.disabled-dropdown {
+  background-color: #eee !important;
+}
+
+.modal-wrapper:focus-visible {
+  outline: none;
+}
+
+/* ************************** */
+/* Attendance Summary slider */
+/* ************************ */
+
+/* #app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+} */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* styles/globals.css */
+
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.timeline-date {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.timeline-content {
+  max-width: 400px;
+}
+
+/* Add more styles as needed */
+.timeline-circle {
+  width: 10px;
+  height: 10px;
+  background-color: #007bff;
+  /* Change the color as needed */
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.timeline-line {
+  width: 2px;
+  height: 20px;
+  /* Adjust the height as needed */
+  background-color: #007bff;
+  /* Change the color as needed */
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.text-field-custom > div {
+  flex: 1;
+}
+
+.custom-date-time-picker > div > input {
+  padding: 8.5px !important;
+  color: #595959;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.date-picker-component > div > input::placeholder {
+  color: #888 !important;
+  opacity: 1 !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.country-custom-dropdown > div > div {
+  padding: 7px 0 7px 15px;
+}
+
+.text-field-custom > div > input {
+  padding: 5px 15px;
+}
+.form-input-field {
+  width: 100%;
+  padding: 10px;
+  min-height: 40px;
+}
+.form-input-field:disabled {
+  background: #eee !important;
+  cursor: no-drop;
+}
+.form-input-field:focus {
+  outline: none;
+}
+.form-input-field::placeholder,
+.file-upload-label {
+  color: #888;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.file-upload-label {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 10px;
+}
+.form-date-picker-component {
+  width: 100%;
+}
+.no-error-border fieldset {
+  border: solid 1px #ccc !important;
+}
+.error-border fieldset {
+  border: solid 1px red !important;
+  /* border-radius: 7px; */
+}
+.icon-refresh-play {
+  animation: spin 0.5s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

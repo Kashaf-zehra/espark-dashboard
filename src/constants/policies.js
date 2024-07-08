@@ -1,0 +1,55 @@
+export const POLICIES_DATA = {
+  title: 'Download Policy',
+  downloadPolicy: 'Download policy',
+  description: 'You will find all the policies related to your company below.',
+  close: 'Close',
+  download: 'Download',
+  policy: 'Policies',
+  companyPolicy:
+    'You will manage all the policies related to your company below.',
+  uploadPolicy: 'Upload Policy',
+  items: [
+    {
+      id: 1,
+      image: '/images/policies/salary-document.svg',
+      reportHeading: 'Salary Based Employee Policy',
+      downloadReports: 'Generate and download all your payroll reports',
+      downloadBtn: 'Download',
+    },
+    {
+      id: 2,
+      image: '/images/policies/salary-document.svg',
+      reportHeading: 'Hourly Based Employee Policy',
+      downloadReports: 'Your Team member report can be downloaded here',
+      downloadBtn: 'Download',
+    },
+    {
+      id: 3,
+      image: '/images/policies/salary-document.svg',
+      reportHeading: 'Project Based Employee Policy',
+      downloadReports: 'Generate and download all your invoice reports',
+      downloadBtn: 'Download',
+    },
+    {
+      id: 4,
+      image: '/images/policies/business-manager.svg',
+      reportHeading: 'Management Fees',
+      downloadReports: 'Generate and download all your expenses reports',
+      downloadBtn: 'Download',
+    },
+    {
+      id: 5,
+      image: '/images/policies/salary.svg',
+      reportHeading: 'Employer Cost',
+      downloadReports: 'Generate and download all your expenses reports',
+      downloadBtn: 'Download',
+    },
+    {
+      id: 6,
+      image: '/images/policies/property-contract.svg',
+      reportHeading: 'Leaves Policy',
+      downloadReports: 'Generate and download all your expenses reports',
+      downloadBtn: 'Download',
+    },
+  ],
+};
