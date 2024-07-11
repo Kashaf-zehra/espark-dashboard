@@ -14,101 +14,42 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Dashboard Project Overview
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+I developed  with my teama comprehensive dashboard using Next.js that caters to three distinct user roles: clients, employees, and superadmins. This project exemplifies my proficiency in building scalable, efficient, and user-friendly web applications. Here's a brief overview of the project:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Client Dashboard:
 
-## Learn More
+User Interface: Designed a clean and intuitive interface for clients to manage their profiles, view project updates, and communicate with support.
+Features: Clients can view their project status, access documents, and receive notifications about important updates.
 
-To learn more about Next.js, take a look at the following resources:
+Employee Dashboard:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Task Management: Developed functionalities for employees to view assigned tasks, update progress, and collaborate with team members.
+Time Tracking: Implemented a time tracking feature to log hours spent on tasks, enhancing productivity and accountability.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Superadmin Dashboard:
 
-## Deploy on Vercel  
+User Management: Provided superadmins with powerful tools to manage users, including creating, updating, and deleting client and employee accounts.
+Analytics and Reports: Built comprehensive analytics and reporting features to monitor project performance, employee productivity, and overall business metrics.
+Technical Highlights:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Next.js: Utilized Next.js to build a server-side rendered application, ensuring fast load times and improved SEO.
+State Management: Implemented efficient state management using Redux, ensuring a seamless and responsive user experience.
+Material-UI: Used Material-UI for consistent and aesthetically pleasing UI components across the dashboard.
+Responsive Design: Ensured the dashboard is fully responsive, providing a smooth experience on both desktop and mobile devices.
+Authentication and Authorization: Implemented robust authentication and role-based authorization to secure the application and manage user access.
+This project demonstrates my ability to develop complex applications that meet diverse user needs while maintaining high performance and scalability
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![image](https://github.com/Kashaf-zehra/espark-dashboard/assets/64959960/869e05b8-d509-4c68-83be-fb2d63aa187b)
 
-## Branching and Merging Process:
+![image](https://github.com/Kashaf-zehra/espark-dashboard/assets/64959960/20b45862-a943-444d-9c8c-a1531594fb85)
 
-### Epic Branch Creation:
+![image](https://github.com/Kashaf-zehra/espark-dashboard/assets/64959960/9a6d236c-44f7-47ae-9ebf-13f45d9d7662)
 
-- When starting work on a new epic, create an epic branch from the development branch.
-- Naming Convention: epic/issues/issue-no, 
-```bash
-e.g., epic/issues/3.
-```
+![image](https://github.com/Kashaf-zehra/espark-dashboard/assets/64959960/0a4df3b6-486c-4a42-ae4f-47637e611ad9)
 
-### Feature Branch Creation:
+![image](https://github.com/Kashaf-zehra/espark-dashboard/assets/64959960/fab2f5da-7f11-49cd-b8ea-724ea854f5d5)
 
-- For tasks related to an epic, create a feature branch from the corresponding epic branch.
-- Perform all development work related to the feature in this branch.
-- Naming Convention:
-```bash
- feature/issues/issue-number,
-e.g., feature/issues/5.
-```
 
-### Testing and QA:
-
-- Once the feature is developed and tested, create a Build and provide it to the QA team.
-- QA verifies the feature for functionality and quality.
-
-### Pull Request (PR) Creation:
-
-- After QA verification, create a Pull Request (PR) to merge the feature branch into the corresponding epic branch.
-- The PR undergoes code review and approval from TL/ Dev Lead.
-
-### Epic Completion:
-
-- If the epic's tasks are complete, create a Build of the entire epic's features and send it to QA for final verification.
-
-### Epic PR with Development:
-
-- Create a PR to merge the epic branch into the development branch.
-- This step ensures that the completed epic is integrated into the development branch.
-
-### BUg/Hot Fix Branch Creation:
-
-- If a minor issue is found in the development branch, 
-create a hotfix branch & fix within this branch.
-
-```bash
-- Naming Convention: hotfix/issues/issue-no,
-- e.g., hotfix/issues/4.
-```
-
-- If a bug is found in the development branch, 
-create a bugfix branch.- Fix the bug within this branch.
-
-```bash
-- Naming Convention: bugfix/issues/issue-no,
-- e.g., bugfix/issues/4.
-```
-
-### Bug Fix Resolved & Merged PR within Development:
-
-- After fixing the bug, create a PR to merge the hotfix branch into the development branch.
-- The fix is then incorporated into the development codebase.
-
-### QA and Epic Bugs:
-
-- If bugs are found in the epic branch during QA, follow the same process as with development bugs.
-- Create a bug fix branch, fix the bug, and create a PR to merge it into the corresponding epic branch.
-
-### Final Epic Integration:
-
-- Once all tasks within the epic are completed and verified, create a final APK and send it to QA for comprehensive testing.
-- Epic PR with Development (Final):
-
-Create a PR to merge the fully verified epic branch into the development branch.
-This ensures that the entire epic is successfully integrated into the project's main development codebase.
-By following this branching and merging process, you ensure a structured and organized approach to feature development, bug fixing, and the integration of epics into the development codebase. This methodology helps maintain code quality, collaboration, and the smooth progression of your project.
