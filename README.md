@@ -17,7 +17,7 @@ bun dev
 
 Dashboard Project Overview
 
-I developed  with my teama comprehensive dashboard using Next.js that caters to three distinct user roles: clients, employees, and superadmins. This project exemplifies my proficiency in building scalable, efficient, and user-friendly web applications. Here's a brief overview of the project:
+I developed  with my team a comprehensive dashboard using Next.js that caters to three distinct user roles: clients, employees, and superadmins. This project exemplifies my proficiency in building scalable, efficient, and user-friendly web applications. Here's a brief overview of the project:
 
 Client Dashboard:
 
